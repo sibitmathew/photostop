@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {margin:0; background-color:#fff; }
+.wrapper{ width:1000px; margin:0 auto;}
+
+p{font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight:normal; line-height:20px; text-align:justify;}
+
+#header-main {width:100%; background: url(../images/header_bg.jpg); background-repeat:repeat-x;} 
+.header {width:100%; height:112px; padding-top:29px;}
+.header .logo {width:184px; height:96px; float:left; margin-right:16px;}
+.header .recent-main {width:800px; height:112px; float:left;}
+.header .title-main {width:800px; height:25px; float:left; margin-top:10px;}
+.header .title-main span {display:block; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight:bold; color:#000; width:auto; float:left;}
+.header .title-main .title {display:block; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight:bold; color:#186f93; width:auto; float:right;}
+.header .title-main ul {margin:0;}
+.header .title-main ul li {display:block; margin:0; list-style:none; float:right;}
+.header .title-main ul li a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#186f93; font-weight:bold; text-decoration:none; margin-left:10px }
+.header .title-main ul li a:hover {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#000; font-weight:bold; text-decoration:none;}
+.header .recent-images {width:800px; height:auto; float:left;}
+.header .recent-images ul {margin:0; list-style:none;}
+.header .recent-images ul li {display:block; float:left; width:90px; height:54px; border:3px solid #adadad; margin-right:21px; list-style:none; padding:0;}
+.header .recent-images ul li.last {margin-right:0;}
+
+#header-main-sub {width:100%; height:80px; background:url(../images/header_bg.jpg); background-repeat:repeat-x;}
+.header-sub {width:100%; height:70px;	float:left; padding-top:10px;}
+.header-sub .logo-sub {height:70px}
+.header-sub .recent-main-sub {height:70px;} 
+
+
+#body-main { width:100%; background-color:#fff;} 
+#body-main-gallery { width:100%; height:640px; background-color:#fff;} 
+.body-sec {width:100%; padding:20px 0; height:380px;}
+.body-sec .left {width:183px; height:326px;	float:left; margin-right:16px; background-color:#e5e5e5; padding-top:54px;}
+.body-sec .left-gal {width:183px; height:543px;	float:left; margin-right:16px; background-color:#e5e5e5; padding-top:54px;}
+.body-sec .left ul {margin:0;}
+.body-sec .left ul li {margin:0; display:block; float:left; border-top:1px solid #a6a5a5; width:141px; height: 30px; padding-left: 42px; list-style: none; padding-top: 13px;}
+.body-sec .left ul li.last {border-bottom:1px solid #a6a5a5;}
+.body-sec .left ul li a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#000; font-weight:bold; text-decoration:none;}
+.body-sec .left ul li a:hover {color:#186f93; text-decoration:none;}
+
+.body-sec .mid {width:621px; height:373px; background-color:#adadad; padding:3px; float:left; margin-right:16px;}
+.body-sec .subpage {width:761px;  float:left; padding:20px;}
+.body-sec .subpage h2 { font-family: Arial, Helvetica, sans-serif; font-size: 18px; color:#000; font-weight:bold; display:block; margin-bottom:20px;}
+.body-sec .subpage .body-gal { width:100%; padding:0; height:537px; overflow:auto;}
+.body-sec .subpage .body-gal img { display:block; width:172px; height:108px; margin:9px 7px; float: left;}
+
+.body-sec .right {width:158px; height:380px; float:left;}
+.body-sec .right h2 {display:block; background-color:#adadad; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#fff; font-weight:bold; padding: 8px; text-align: center; }
+.body-sec .right ul {margin:0;}
+.body-sec .right ul li {margin:0; display:block; float:left; background-color:#adadad; width:152px; height:98px; list-style: none; padding:3px; margin-top:12px}
+
+
+#footer-main {width:100%; height:135px; background-color: #000;}
+.footer-cont {width:100%; height:40px; padding-top:5px;}
+.footer-cont span{display:block; float:left; font-family:Arial, Helvetica, sans-serif; color:#fff; font-size:11px;}
+.footer-cont ul{margin:0;}
+.footer-cont ul li{margin:0; display:block; float:right; margin-left:7px;}
+
+
+.modal-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; background-color: #000000;}
+.modal-backdrop.fade { opacity: 0;}
+.modal-backdrop,
+.modal-backdrop.fade.in { opacity: 0.8; filter: alpha(opacity=80);}
+.modal { position: fixed; top: 10%; left: 50%; z-index: 1050; width: 500px; margin-left: -250px; background-color: #ffffff; border: 1px solid #999; border: 1px solid rgba(0, 0, 0, 0.3); *border: 1px solid #999;          -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none;}
+.modal.fade {
+  top: -100%; -webkit-transition: opacity 0.3s linear, top 0.3s ease-out; -moz-transition: opacity 0.3s linear, top 0.3s ease-out; -o-transition: opacity 0.3s linear, top 0.3s ease-out; transition: opacity 0.3s linear, top 0.3s ease-out;}
+
+.modal.fade.in {top: 10%;}
+.modal-header { padding: 9px 15px; border-bottom: 1px solid #eee;}
+.modal-header .close { margin-top: 2px; text-align:right;float: right;}
+.modal-header h3 {margin: 0;line-height: 30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; padding-left:24px;}
+.modal-body { position: relative; max-height: 400px; padding: 15px; overflow-y: auto;}
+.modal-form { margin-bottom: 0;}
+.modal-footer { padding: 14px 15px 15px; margin-bottom: 0; text-align: right; background-color: #f5f5f5; border-top: 1px solid #ddd; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px; border-radius                : 0 0 6px 6px; *zoom: 1;}
+
+	
+.form-text{ font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; padding-left:20px;}
+.form-text-box{ font-family:Arial, Helvetica, sans-serif; width: 230px; height: 15px; font-size: 12px;margin-bottom: 8px; margin-right:20px;}
+.form-text-list{font-family:Arial, Helvetica, sans-serif; width: 234px; height: 23px; font-size: 12px; margin-bottom: 8px; margin-right:20px;}
+.form-text-submit{ font-family:Arial, Helvetica, sans-serif; width: 230px; height: 25px; font-size: 12px; margin-bottom: 8px; margin-right:20px;}
+.form-text-submit-small{font-family:Arial, Helvetica, sans-serif; width: 120px; height: 25px; font-size: 12px; margin-bottom: 8px; margin-right:10px;}
+
+
+
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+
+
+
+
+	
+	
+	
